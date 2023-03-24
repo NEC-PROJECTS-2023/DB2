@@ -1,13 +1,13 @@
 # DB2
 Automatic License Number Plate Recognition System 
-#Team
-Vijay Singh Rasaputra
-Yaswanth Maruri
-Rahul Ratnam Gali
-Nagul Meera Vali Shaik
-#Dataset
+### TEAM
+1. Vijay Singh Rasaputra
+2. Yaswanth Maruri
+3. Rahul Ratnam Gali
+4. Nagul Meera Vali Shaik
+### Dataset
 https://www.kaggle.com/datasets/elysian01/car-number-plate-detection
-#Description
+### Description
 The License Plate detection and recognition is a challenging task that plays a significant role in intelligent transportation systems. Where it could be used as a core
 in various applications, such as security, traffic control, and electronic payment systems (e.g., freeway toll payment and parking fee payment). A variety of algorithms
 are developed for this work and each one has advantages and disadvantages for extracting plates in images under different circumstances. However, the complexity of some
