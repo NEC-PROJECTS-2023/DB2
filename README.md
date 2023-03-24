@@ -1,6 +1,7 @@
 # DB2
 Automatic License Number Plate Recognition System 
-#Team 
+#Team
+
 Vijay Singh Rasaputra
 Yaswanth Maruri
 Rahul Ratnam Gali
