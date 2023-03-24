@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url('../static/empty-road-background-city-modern-buildings-office-skyscrapers-singapore-city-highway-empty-road-background-120793735-transformed.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1{
+                margin-left:300px;
+                margin-top:50px;
+            }
+            .text{
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            input[type=file]{
+                display:none;
+            }
+            .file,.button{
+                background-color: #0f0202;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                font-size: 16px;
+                font-weight:bold;
+                margin: 4px 2px;
+                cursor: pointer;
+                box-shadow: 0 6px 20px 0 rgba(3, 143, 199, 0.2), 0 6px 20px 0 rgba(3,143,199,0.2);
+            }
+            .upload-container{
+                margin-left:550px;
+                margin-top:50px;
+            }
+            #image{
+                width:280px;
+                height:300px;
+            }
+            .display-image{
+                margin-left:400px;
+                margin-top:150px;
+            }
+            .display-container{
+                display:flex;
+            }
+            .detect{
+                margin-left:200px;
+                margin-top:200px;
+            }
+            .button{
+                margin-left: 100px;
+                font-size: 16px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .result{
+                margin-left:300px;
+                margin-top:100px;
+		    color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AUTOMATIC LICENSE NUMBER PLATE RECOGNITION SYSTEM</h1>
+        
+        <div class="upload-container">
+            
+            <h2>Upload and Detect Image</h2>
+            <form method="post" action="/image" enctype="multipart/form-data">
+                <label class="file">
+                    <input type="file" name="file"/>
+                    Select Image
+                </label>
+                <input type="submit" value="Upload & Detect" class="button">
+            </form>
+        </div>
+        
+        {% if filename %}
+	   <div class="display-container">
+		<div class="display-image">
+                    <img src="{{ url_for('display_image', filename=filename) }}" id="image">
+            </div>
+		<div class="result">
+           		<p class="text"><h2>License Number</h2></p>
+		</div>
+	   </div>
+        {% endif %}
+    </body>
+</html>
